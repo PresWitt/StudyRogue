@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Rogue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{ url_for('static', filename='book.png') }}" alt="Book Graphic">
+            <h1>Study Rogue</h1>
+            <img src="{{ url_for('static', filename='sword.png') }}" alt="Sword Graphic">
+        </div>
+        <div class="game-area">
+            <div id="player-info">
+                <h2>Player</h2>
+                <p>Health: <span id="player-health">100</span></p>
+                <!-- Add player health bar here -->
+            </div>
+            <div id="enemy-info">
+                <h2 id="enemy-name">Enemy</h2>
+                <p>Health: <span id="enemy-health">100</span></p>
+                <!-- Add enemy health bar here -->
+                <img src="{{ url_for('static', filename='blank.png') }}" alt="Enemy Image" id="enemy-image">
+            </div>
+            <div id="game-output"></div>
+        </div>
+        <div class="controls">
+            <button id="attack-btn">Attack</button>
+            <button id="defend-btn">Defend</button>
+            <button id="heal-btn">Heal</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

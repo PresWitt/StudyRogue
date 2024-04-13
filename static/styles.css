@@ -1,0 +1,111 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080;
+    color: #FFFFFF; /* Changed text color to white */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+.game-area {
+    width: 948px; /* Update width */
+    height: 516px; /* Update height */
+    background-image: url("dungeon.jpg");
+    background-size: cover;
+    border: 2px solid #333;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+#player-info {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    color: white; /* Change text color to white */
+}
+
+#enemy-info {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    color: white; /* Change text color to white */
+}
+
+.controls {
+    position: absolute;
+    top: calc(83%);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #FFFFFF; /* Changed text color to white */
+}
+
+button#attack-btn {
+    background-color: #ca1338;
+}
+
+button#defend-btn {
+    background-color: #008cff;
+}
+
+button#heal-btn {
+    background-color: #38d41c;
+}
+
+.game-output-box {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    text-align: center;
+}
+
+#game-output {
+    padding: 10px;
+    margin: 0;
+    color: white; /* Change text color to white */
+}
+
+#enemy-image {
+    position: absolute;
+    width: 175px; /* Adjust as needed */
+    height: auto;
+    top: 125px;
+    right: 100px;
+}
